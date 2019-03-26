@@ -46,6 +46,7 @@ nav a{
 	border-bottom: 2px solid #222;
 	opacity: 0;
 	margin-top: 200px;
+	text-decoration: none;
 }
 
 .link:hover{
