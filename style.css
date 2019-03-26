@@ -1,71 +1,62 @@
-*{margin: 0; padding: 0;}
-
+*{
+	padding: 0;
+	margin: 0;
+}
 body{
-	background-color: #0000;
+	padding: 0;
+	margin: 0;
 }
 
-/*MENU DROPDOWN */
+/* MENU DROPDOWN */
 
-#check{
-	display: none;
-}
-
-#icone{
-	cursor: pointer;
-	padding: 15px;
-	position: absolute;
-	z-index: 1;
-}
-
-.barra{
-	background-color: #56E88B;
-	height: 100%;
-	width: 300px;
-	position: absolute;
-	transition: all .2s linear;
-	left: -300px;
+.navigationDesktop{
+	background-color: #000;
+	margin-top: -20px;
+	height: 60px;
 }
 
 nav{
-	width: 100%;
-	position: absolute;
-	top: 60px;
+	height: 40px;
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
 }
 
 nav a{
+	display: block;
+	text-decoration: none;
+	color: white;
+}
+
+nav a:hover{
+	background-color: #333;
+	color: white;
 	text-decoration: none;
 }
 
-.link{
-	background-color: #000000;
-	padding: 20px;
-	font-family: 'Arial';
-	font-size: 12pt;
-	transition: all .2s linear;
-	color: #f4f4f9;
-	opacity: 0;
-	margin-top: 200px;
-	text-decoration: none;
+nav ul{
+	list-style: none;
+	z-index: 1;
 }
 
-.link:hover{
-	background-color: #3EA01B;
+nav ul li{
+	float: left;
+	width: 200px;
+	height: 40px;
+	line-height: 60px;
+	background-color: #000;
 }
 
-#check:checked ~ .barra{
-	transform: translate(300px);
+nav ul ul li{
+	position: relative;
+	display: none;
 }
 
-#check:checked ~ .barra nav a .link{
-	opacity: 1;
-	margin-top: 0;
-	transition-delay: .2s;
-}
-
-.logo{
-	width: 50%;
-	height: 100%;
-	padding-left: 26%;
+nav ul li:hover ul li{
+	display: block;
+	z-index: 1;
+	line-height: 40px;
 }
 
 /*COLOR OVERLAY + ZOOM HOVER*/
@@ -73,13 +64,12 @@ nav a{
 
 .parent {
   width: 100%; 
-  height: 650px;
+  height: 400px;
   border: 1px;
   overflow: hidden;
   position: relative;
   float: left;
   display: inline-block;
-  cursor: pointer;
 }
 
 .banner{
@@ -103,24 +93,12 @@ nav a{
 /*LOGO */
 
 #logopos{
-	position: relative;
-	right: 10px;
-	top: 170px;
+	position: absolute;
+	margin-top: 5%;
+	left: 10%;
 }
 
-
-/* TEXTOS */
-
-#conteudo{
-	float: left;
-	margin: 30px;
-}
-
-.alinhar{
-	width: 500px;
-	margin: 20px auto;
-	padding: 0;
-}
+/* CONTEUDO */
 
 .titulo{
 	margin: 0 0 ;
@@ -128,138 +106,6 @@ nav a{
 	text-transform: uppercase;
 }
 
-@media only screen and (min-width : 1224px){
-
-*{margin: 0; padding: 0;}
-
-body{
-	background-color: #0000;
-}
-
-/*MENU DROPDOWN */
-
-#check{
-	display: none;
-}
-
-#icone{
-	cursor: pointer;
-	padding: 15px;
-	position: absolute;
-	z-index: 1;
-}
-
-.barra{
-	background-color: #86FF6B; /* cor do menu */
-	height: 100%;
-	width: 300px;
-	position: absolute;
-	transition: all .2s linear;
-	left: -300px;
-	top: 0;
-}
-
-nav{
-	width: 100%;
-	position: absolute;
-	top: 60px;
-}
-
-nav a{
-	text-decoration: none;
-}
-
-.link{
-	background-color: #61B84D; /*cor de cada peça do menu */
-	padding: 20px;
-	font-family: 'Arial';
-	font-size: 12pt;
-	transition: all .2s linear;
-	color: #f4f4f9; /* cor da letra do menu */
-	border-bottom: 2px solid #222;
-	opacity: 0;
-	margin-top: 200px;
-}
-
-.link:hover{
-	background-color: #B6C449; /* mudança de cor com hover */
-}
-
-#check:checked ~ .barra{
-	transform: translate(300px);
-}
-
-#check:checked ~ .barra nav a .link{
-	opacity: 1;
-	margin-top: 0;
-	transition-delay: .2s;
-}
-
-.logo{
-	width: 50%;
-	height: 100%;
-	padding-left: 26%;
-}
-
-	
-/* COLOR OVERLAY + ZOOM HOVER*/
-
-.parent {
-  width: 100%; 
-  height: 400px;
-  border: 1px;
-  overflow: hidden;
-  position: relative;
-  float: left;
-  display: inline-block;
-  cursor: pointer;
-}
-
-
-.banner{
-height:400px;
-width: 100%;
-background:
-  linear-gradient(
-     rgba(78, 241, 150, 0.38),
-     rgba(78, 241, 150, 0.38)
-     ),
-     url(happy-mars.jpg);
-background-repeat: no-repeat;
-transition: all .3s; 	
-}
-
-
-.parent:hover .banner,
-.parent:focus .banner{
-	transform: scale(1.2);
-}
-
-/* LOGO */
-
-#logopos{
-	position: relative;
-	left: 100px;
-	top: -300px;
-}
-
-/* TEXTOS */
-
-#conteudo{
-	float: left;
-	margin: 30px;
-}
-
-.alinhar{
-	width: 920px;
-	margin: -180px 200px;
-	padding: 0;
-}
-
-.titulo{
-	margin: 0 0 ;
-	padding: 0;
-	text-transform: uppercase;
-}
-
+.txt{
+	font-size: 25px; 
 }
